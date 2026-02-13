@@ -29,17 +29,16 @@ const FeatureSection: React.FC<FeatureSectionProps> = ({
         </div>
         <div className="w-full md:w-1/2 flex justify-center">
           <div className="relative group max-w-sm md:max-w-full">
-            <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-lg blur opacity-10 group-hover:opacity-20 transition duration-1000 group-hover:duration-200"></div>
-            <div className="relative bg-white border border-gray-100 rounded-lg shadow-xl p-2 md:p-4 min-h-[300px] flex flex-col items-center">
+            <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl blur opacity-0 group-hover:opacity-15 transition-opacity duration-500"></div>
+            <div className="relative bg-white border border-gray-100 rounded-2xl shadow-xl p-3 md:p-5 flex items-center justify-center overflow-hidden transition-shadow duration-300 group-hover:shadow-2xl">
               <img 
                 src={image} 
                 alt={imageLabel} 
-                className="max-h-[400px] object-contain rounded" 
+                className="max-h-[400px] w-full object-contain rounded-xl"
                 onError={(e) => {
                   (e.target as HTMLImageElement).src = `https://placehold.co/800x600/f3f4f6/0044cc?text=${encodeURIComponent(imageLabel)}`;
                 }}
               />
-              <div className="mt-4 text-xs text-gray-400 italic">{imageLabel}</div>
             </div>
           </div>
         </div>

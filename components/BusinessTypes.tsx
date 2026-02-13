@@ -19,16 +19,16 @@ const BusinessTypes: React.FC = () => {
   ];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-20 bg-gray-50 scroll-mt-28" id="services">
       <div className="max-w-6xl mx-auto px-4">
-        <h3 className="text-center text-xl font-bold uppercase tracking-widest text-gray-500 mb-10">Business Types</h3>
+        <h3 className="text-center text-lg font-bold uppercase tracking-widest text-gray-400 mb-12">Business Types</h3>
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 md:gap-8">
           {types.map((type, index) => (
             <div key={index} className="flex flex-col items-center group cursor-pointer">
-              <div className="w-16 h-16 md:w-20 md:h-20 bg-white rounded-2xl shadow-sm border border-gray-100 flex items-center justify-center mb-3 group-hover:shadow-md group-hover:border-blue-200 transition-all duration-300">
-                <img src={type.icon} alt={type.name} className="w-10 h-10 md:w-12 md:h-12 object-contain" />
+              <div className="w-20 h-20 md:w-24 md:h-24 bg-white rounded-2xl shadow-sm border border-gray-100 flex items-center justify-center mb-3 group-hover:shadow-lg group-hover:border-blue-200 group-hover:-translate-y-1 transition-all duration-300">
+                <img src={type.icon} alt={type.name} className="w-11 h-11 md:w-14 md:h-14 object-contain" />
               </div>
-              <span className="text-sm font-semibold text-gray-700 text-center">{type.name}</span>
+              <span className="text-sm font-semibold text-gray-600 text-center group-hover:text-blue-700 transition-colors duration-300">{type.name}</span>
             </div>
           ))}
         </div>

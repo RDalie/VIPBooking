@@ -52,20 +52,13 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* Navigation/Carousel Dots */}
-      <div className="absolute bottom-20 md:bottom-28 left-1/2 -translate-x-1/2 flex items-center gap-3 z-20">
-        <span className="w-2.5 h-2.5 rounded-full bg-black/20 cursor-pointer"></span>
-        <span className="w-2.5 h-2.5 rounded-full bg-black cursor-pointer shadow-sm"></span>
-        <span className="w-2.5 h-2.5 rounded-full bg-black/20 cursor-pointer"></span>
-      </div>
-
       {/* Smooth Wavy Bottom Transition */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] pointer-events-none transform translate-y-[1px]">
         <svg 
           viewBox="0 0 1200 120" 
           preserveAspectRatio="none" 
           className="relative block w-full h-[80px] md:h-[140px]" 
-          fill="#f9fafb"
+          fill="#ffffff"
         >
           <path d="M0,0 C150,90 400,120 600,60 C800,0 1050,30 1200,100 L1200,120 L0,120 Z"></path>
         </svg>

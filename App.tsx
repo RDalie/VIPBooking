@@ -15,18 +15,19 @@ const App: React.FC = () => {
         <Hero />
 
         {/* Main Branding CTA */}
-        <div className="py-20 bg-white text-center px-4">
-          <h2 className="text-3xl md:text-5xl font-extrabold mb-8 text-blue-900 italic">
-            “Your Platform. Your Clients. Your Future.”
-          </h2>
-          <button className="bg-black text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-800 transition-all transform hover:scale-105 active:scale-95 shadow-xl">
-            Get started now <i className="fas fa-arrow-right ml-2"></i>
-          </button>
+        <div className="py-24 bg-white text-center px-4">
+          <blockquote className="text-3xl md:text-5xl font-extrabold mb-10 text-blue-900 leading-tight tracking-tight">
+            "Your Platform. Your Clients. Your Future."
+          </blockquote>
+          <a href="#contact" className="inline-flex items-center gap-2 bg-black text-white px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-800 transition-all duration-200 hover:scale-105 active:scale-95 shadow-xl hover:shadow-2xl">
+            Get started now <i className="fas fa-arrow-right"></i>
+          </a>
         </div>
 
         <BusinessTypes />
 
         {/* Comparison Section 1 */}
+        <div id="features" className="scroll-mt-28" />
         <FeatureSection
           title="Unlike Others,"
           subtitle="we never steal your clients."
@@ -57,10 +58,10 @@ const App: React.FC = () => {
         />
 
         {/* Payment Partner Section */}
-        <section className="py-24 px-4 bg-gray-50">
+        <section className="py-24 px-4 bg-gray-50 scroll-mt-28" id="payment">
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-16">
             <div className="w-full md:w-1/2">
-              <div className="bg-white p-8 rounded-3xl shadow-2xl border border-gray-100 flex items-center justify-center min-h-[350px]">
+              <div className="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl border border-gray-100 flex items-center justify-center min-h-[350px] transition-shadow duration-300">
                 <img
                   src={`${import.meta.env.BASE_URL}SecuredPayment.png`}
                   alt="ANZ Worldline Terminal"
@@ -73,7 +74,7 @@ const App: React.FC = () => {
               </div>
             </div>
             <div className="w-full md:w-1/2 text-center md:text-left">
-              <h2 className="text-4xl font-extrabold text-blue-900 mb-6">
+              <h2 className="text-3xl md:text-4xl font-extrabold text-blue-900 mb-6 leading-tight">
                 Payment supported by ANZ Worldline
               </h2>
               <p className="text-xl text-gray-600 leading-relaxed">
