@@ -6,7 +6,7 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <div className="flex items-center">
           <img
-            src="/square logo.png"
+            src={`${import.meta.env.BASE_URL}square logo.png`}
             alt="VIP Booking"
             className="h-24 w-auto"
           />

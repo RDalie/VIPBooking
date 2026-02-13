@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
                {/* Main Dashboard Asset - Using absolute path */}
                <div className="bg-white rounded-[2rem] shadow-[0_25px_60px_rgba(0,0,0,0.3)] p-1.5 md:p-2 border-[8px] border-white/10 overflow-hidden transition-transform duration-500 hover:scale-[1.01]">
                   <img 
-                    src="/WebCalendar.png"
+                    src={`${import.meta.env.BASE_URL}WebCalendar.png`}
                     alt="Multi-Staff Scheduling Dashboard" 
                     className="w-full h-auto rounded-[1.6rem] block"
                     onError={(e) => {
@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
                <div className="absolute -right-4 md:-right-8 -bottom-10 md:-bottom-16 w-[35%] max-w-[220px] bg-white rounded-[2.8rem] shadow-[0_35px_70px_rgba(0,0,0,0.4)] p-1.5 border-[6px] border-white overflow-hidden transform transition-all duration-500 hover:translate-y-[-8px]">
                   
                   <img 
-                    src="/PhoneCalendar.png"
+                    src={`${import.meta.env.BASE_URL}PhoneCalendar.png`}
                     alt="Mobile App Booking" 
                     className="w-full h-auto rounded-[2.3rem] block"
                     onError={(e) => {

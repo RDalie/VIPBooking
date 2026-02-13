@@ -2,19 +2,20 @@
 import React from 'react';
 
 const BusinessTypes: React.FC = () => {
+  const base = import.meta.env.BASE_URL;
   const types = [
-    { name: "Hair Salon", icon: "/icons/hair-cut_9993258.png" },
-    { name: "Barber", icon: "/icons/man_2241732.png" },
-    { name: "Nails", icon: "/icons/manicure_3252599.png" },
-    { name: "Spa & sauna", icon: "/icons/sauna_946406.png" },
-    { name: "Medspa", icon: "/icons/medicine_8131889.png" },
-    { name: "Massage", icon: "/icons/massage_1997045.png" },
-    { name: "Fitness & recovery", icon: "/icons/power_8910792.png" },
-    { name: "Physical therapy", icon: "/icons/physical-therapy_3208998.png" },
-    { name: "Health practice", icon: "/icons/health-check_6286779.png" },
-    { name: "Tattoo & piercing", icon: "/icons/tattoo_2600516.png" },
-    { name: "Pet grooming", icon: "/icons/dog-grooming_14257473.png" },
-    { name: "Tanning studio", icon: "/icons/Tanning_4607319.png" }
+    { name: "Hair Salon", icon: `${base}icons/hair-cut_9993258.png` },
+    { name: "Barber", icon: `${base}icons/man_2241732.png` },
+    { name: "Nails", icon: `${base}icons/manicure_3252599.png` },
+    { name: "Spa & sauna", icon: `${base}icons/sauna_946406.png` },
+    { name: "Medspa", icon: `${base}icons/medicine_8131889.png` },
+    { name: "Massage", icon: `${base}icons/massage_1997045.png` },
+    { name: "Fitness & recovery", icon: `${base}icons/power_8910792.png` },
+    { name: "Physical therapy", icon: `${base}icons/physical-therapy_3208998.png` },
+    { name: "Health practice", icon: `${base}icons/health-check_6286779.png` },
+    { name: "Tattoo & piercing", icon: `${base}icons/tattoo_2600516.png` },
+    { name: "Pet grooming", icon: `${base}icons/dog-grooming_14257473.png` },
+    { name: "Tanning studio", icon: `${base}icons/Tanning_4607319.png` }
   ];
 
   return (

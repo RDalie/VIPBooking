@@ -30,7 +30,7 @@ const App: React.FC = () => {
         <FeatureSection
           title="Unlike Others,"
           subtitle="we never steal your clients."
-          image="/UnlikeOthers.png"
+          image={`${import.meta.env.BASE_URL}UnlikeOthers.png`}
           imageLabel="Client Protection Interface"
           reverse={false}
           bgColor="bg-white"
@@ -40,7 +40,7 @@ const App: React.FC = () => {
         <FeatureSection
           title="Your database stays"
           subtitle="private, portable, and under your brand"
-          image="/Marketing.png"
+          image={`${import.meta.env.BASE_URL}Marketing.png`}
           imageLabel="Secure Database Management"
           reverse={true}
           bgColor="bg-gray-50"
@@ -50,7 +50,7 @@ const App: React.FC = () => {
         <FeatureSection
           title="Don't let others control your clients."
           subtitle="We bring them back to you."
-          image="/Database.png"
+          image={`${import.meta.env.BASE_URL}Database.png`}
           imageLabel="Business Growth Analytics"
           reverse={false}
           bgColor="bg-white"
@@ -62,7 +62,7 @@ const App: React.FC = () => {
             <div className="w-full md:w-1/2">
               <div className="bg-white p-8 rounded-3xl shadow-2xl border border-gray-100 flex items-center justify-center min-h-[350px]">
                 <img
-                  src="/SecuredPayment.png"
+                  src={`${import.meta.env.BASE_URL}SecuredPayment.png`}
                   alt="ANZ Worldline Terminal"
                   className="max-w-full h-auto rounded-lg"
                   onError={(e) => {
