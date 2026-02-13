@@ -90,13 +90,13 @@ const Hero: React.FC = () => {
   const renderVisual = (visual: SlideVisual): React.ReactNode => {
     if (visual === "mobile") {
       return (
-        <div className="relative w-full max-w-[320px]">
-          <div className="absolute -left-10 top-1/2 -translate-y-1/2 w-52 h-24 bg-white/85 rounded-full blur-[1px]"></div>
+        <div className="relative w-full max-w-[220px] sm:max-w-[260px] md:max-w-[320px]">
+          <div className="absolute -left-8 sm:-left-10 top-1/2 -translate-y-1/2 w-40 sm:w-52 h-20 sm:h-24 bg-white/85 rounded-full blur-[1px]"></div>
           <div className="relative bg-[#f9f9f9] border-[8px] border-white rounded-[2.8rem] p-2 shadow-[0_28px_70px_rgba(0,0,0,0.35)]">
             <img
               src={`${import.meta.env.BASE_URL}phone.png`}
               alt="Mobile booking screen"
-              className="w-full h-auto rounded-[2.2rem] block"
+              className="w-full h-auto max-h-[420px] sm:max-h-[500px] md:max-h-none object-contain rounded-[2.2rem] block"
               onError={(e) => {
                 (e.target as HTMLImageElement).src =
                   "https://placehold.co/540x1080/ffffff/0055ff?text=PhoneCalendar";
