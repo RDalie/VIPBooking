@@ -15,7 +15,7 @@ const App: React.FC = () => {
         <Hero />
 
         {/* Main Branding CTA */}
-        <div className="py-24 bg-white text-center px-4">
+        <div className="py-24 bg-gradient-to-b from-white via-blue-50/50 to-white text-center px-4">
           <blockquote className="text-3xl md:text-5xl font-extrabold mb-10 text-blue-900 leading-tight tracking-tight">
             "Your Platform. Your Clients. Your Future."
           </blockquote>
@@ -24,38 +24,48 @@ const App: React.FC = () => {
           </a>
         </div>
 
-        <BusinessTypes />
+        <div id="services">
+          <BusinessTypes />
+        </div>
 
-        {/* Comparison Section 1 */}
-        <div id="features" className="scroll-mt-28" />
-        <FeatureSection
-          title="Unlike Others,"
-          subtitle="we never steal your clients."
-          image={`${import.meta.env.BASE_URL}UnlikeOthers.png`}
-          imageLabel="Client Protection Interface"
-          reverse={false}
-          bgColor="bg-white"
-        />
+        {/* Comparison Section */}
+        <section id="features" className="scroll-mt-20">
+          {/* Comparison Section 1 */}
+          <FeatureSection
+            step={1}
+            title="Unlike Others,"
+            subtitle="we never steal your clients."
+            description="Your client relationships are yours. We don't market to your customers or compete with your business."
+            image={`${import.meta.env.BASE_URL}UnlikeOthers.png`}
+            imageLabel="Client Protection Interface"
+            reverse={false}
+            bgColor="bg-white"
+          />
 
-        {/* Comparison Section 2 */}
-        <FeatureSection
-          title="Your database stays"
-          subtitle="private, portable, and under your brand"
-          image={`${import.meta.env.BASE_URL}Marketing.png`}
-          imageLabel="Secure Database Management"
-          reverse={true}
-          bgColor="bg-gray-50"
-        />
+          {/* Comparison Section 2 */}
+          <FeatureSection
+            step={2}
+            title="Your database stays"
+            subtitle="private, portable, and under your brand"
+            description="Export your data anytime. No lock-in, no hidden restrictions — your business data belongs to you."
+            image={`${import.meta.env.BASE_URL}Marketing.png`}
+            imageLabel="Secure Database Management"
+            reverse={true}
+            bgColor="bg-gray-50"
+          />
 
-        {/* Comparison Section 3 */}
-        <FeatureSection
-          title="Don't let others control your clients."
-          subtitle="We bring them back to you."
-          image={`${import.meta.env.BASE_URL}Database.png`}
-          imageLabel="Business Growth Analytics"
-          reverse={false}
-          bgColor="bg-white"
-        />
+          {/* Comparison Section 3 */}
+          <FeatureSection
+            step={3}
+            title="Don't let others control your clients."
+            subtitle="We bring them back to you."
+            description="Smart reminders, rebooking prompts, and loyalty tools that keep your clients coming back directly to you."
+            image={`${import.meta.env.BASE_URL}Database.png`}
+            imageLabel="Business Growth Analytics"
+            reverse={false}
+            bgColor="bg-white"
+          />
+        </section>
 
         {/* Payment Partner Section */}
         <section className="py-24 px-4 bg-gray-50 scroll-mt-28" id="payment">
