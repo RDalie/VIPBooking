@@ -3,18 +3,18 @@ import React from 'react';
 
 const BusinessTypes: React.FC = () => {
   const types = [
-    { name: "Hair Salon", icon: "fa-scissors" },
-    { name: "Barber", icon: "fa-user-tie" },
-    { name: "Nails", icon: "fa-hand-sparkles" },
-    { name: "Spa & sauna", icon: "fa-hot-tub-person" },
-    { name: "Medspa", icon: "fa-stethoscope" },
-    { name: "Massage", icon: "fa-spa" },
-    { name: "Fitness & recovery", icon: "fa-dumbbell" },
-    { name: "Physical therapy", icon: "fa-person-walking" },
-    { name: "Health practice", icon: "fa-heart-pulse" },
-    { name: "Tattoo & piercing", icon: "fa-pen-nib" },
-    { name: "Pet grooming", icon: "fa-dog" },
-    { name: "Tanning studio", icon: "fa-sun" }
+    { name: "Hair Salon", icon: "/icons/hair-cut_9993258.png" },
+    { name: "Barber", icon: "/icons/man_2241732.png" },
+    { name: "Nails", icon: "/icons/manicure_3252599.png" },
+    { name: "Spa & sauna", icon: "/icons/sauna_946406.png" },
+    { name: "Medspa", icon: "/icons/medicine_8131889.png" },
+    { name: "Massage", icon: "/icons/massage_1997045.png" },
+    { name: "Fitness & recovery", icon: "/icons/power_8910792.png" },
+    { name: "Physical therapy", icon: "/icons/physical-therapy_3208998.png" },
+    { name: "Health practice", icon: "/icons/health-check_6286779.png" },
+    { name: "Tattoo & piercing", icon: "/icons/tattoo_2600516.png" },
+    { name: "Pet grooming", icon: "/icons/dog-grooming_14257473.png" },
+    { name: "Tanning studio", icon: "/icons/Tanning_4607319.png" }
   ];
 
   return (
@@ -25,7 +25,7 @@ const BusinessTypes: React.FC = () => {
           {types.map((type, index) => (
             <div key={index} className="flex flex-col items-center group cursor-pointer">
               <div className="w-16 h-16 md:w-20 md:h-20 bg-white rounded-2xl shadow-sm border border-gray-100 flex items-center justify-center mb-3 group-hover:shadow-md group-hover:border-blue-200 transition-all duration-300">
-                <i className={`fas ${type.icon} text-2xl md:text-3xl text-blue-600`}></i>
+                <img src={type.icon} alt={type.name} className="w-10 h-10 md:w-12 md:h-12 object-contain" />
               </div>
               <span className="text-sm font-semibold text-gray-700 text-center">{type.name}</span>
             </div>
